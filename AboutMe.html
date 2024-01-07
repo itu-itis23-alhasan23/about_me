@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Times , serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .about, .education, .skills, .languages {
+            padding: 15px;
+            min-height: 400px;
+            background: #ffffff;
+            margin-top: 20px;
+        }
+        .about img, .education img, .skills img, .languages img {
+            max-width: 150px;
+            margin: 0 auto;
+            display: block;
+            padding: 20px;
+        }
+        .about h2, .education h2, .skills h2, .languages h2,
+        .about p, .education p, .skills p, .languages p {
+            text-align: center;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .skills-left, .skills-right {
+            width: 48%;
+            
+        }
+        .star-rating {
+            font-size: 20px;
+            color: #ffd700;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Ayham</span> Alhasan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="https://itu-itis23-alhasan23.github.io/My-Project/Game.html?">Memory Game</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <img src="WhatsApp Image 2024-01-05 at 14.16.45_bc961e57.jpg" alt="Ayham">
+            <h2>About Me</h2>
+            <p>Hello! I’m Ayham, a passionate student based in Istanbul. My journey began at Istanbul technical university, where I discovering my love for programming and computers.
+                Professionally, I’ve had the opportunity to attend this highly respected university. My work focuses on studying computers, how do they work, and how to programm applications that can work , and I am particularly interested in web development.
+                When I’m not studying or progamming, you’ll find me playing chess or reading about philosophy and history. These activities fuel my creativity and keep me grounded.
+                I believe in learning about the world helps to make it a better place. If you’re interested in learning about my memorizing game you can click on the memeorizing game text above to try it, feel free to contact me on my email Alhasan23@itu.edu.tr.
+                <br>
+                Thanks for your attention!
+            </p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p> My school years were very basic and casual, I made very good friends that I have until this moment. I started most of my school years in syria and continued here in turkey.
+                I obtained an excellent grade in the college entrance exam, which allowed me to be able to be accepted to Istanbul Technical University. 
+                I am currently in my first year at Istanbul Technical University, pursuing a Bachelor's degree in Computer engineering.
+                 My academic journey so far has been filled with exciting challenges and learning opportunities. I have embarked on fundamental courses in programming and software development, 
+                which have sparked a keen interest in web development and algorithmic problem-solving.
+
+                Being a part of this prestigious institution has not only deepened my technical knowledge but has also allowed me to 
+                explore various aspects of technology through practical and theoretical approaches. 
+                This initial phase of my university education is laying a strong foundation for my future endeavors in the tech industry.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <p>programming skills and personal intersts:</p>
+            <div class="skills-container">  
+                <div class="skills-left">
+                    <div>Python <span class="star-rating">★★★★☆</span></div>
+                    <div>HTML/CSS <span class="star-rating">★★★☆☆</span></div>
+                    <div >JavaScript <span class="star-rating">★★☆☆☆</span></div>
+                </div>
+                <div class="skills-right">
+                    <div>chess <span class="star-rating">★★★★★</span></div>
+                    <div>time management<span class="star-rating">★★★☆☆</span></div>
+                    <div >leadership<span class="star-rating">★★★★☆</span></div>
+                    <div >debating<span class="star-rating">★★★★★</span></div>
+                    <div >problem solving<span class="star-rating">★★★★☆</span></div>
+                    <div >drawing<span class="star-rating">★★★★★</span></div>
+                </div>
+            </div>      
+        </section>
+
+        <section class="languages">
+            <h2>Languages</h2>
+            <p>The acquired languages:</p>
+            <div class="skills-container">
+                <div class="skills-left">    
+                    <div>Arabic: <span class="star-rating">★★★★★</span></div>
+                    <div>English: <span class="star-rating">★★★★☆</span></div>
+                    <div>Turkish:<span class="star-rating">★★★☆☆</span></div>
+                </div>
+                <div class="skills-right">        
+                    <div>japanese: <span class="star-rating">★★☆☆☆</span></div>
+                    <div>russian: <span class="star-rating">★★☆☆☆</span></div>
+                    <div>tajik: <span class="star-rating">★☆☆☆☆</span></div>
+                </div>
+        </div>
+        </section>
+    </div>
+</body>
+</html>
