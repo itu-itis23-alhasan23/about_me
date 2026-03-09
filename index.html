@@ -196,13 +196,13 @@
         
         <header>
             <h1>Ayham Alhasan</h1> <div class="title-line"></div>
-            <h2>Personal Portfolio</h2> <p>A Computer Engineering Student, Too Interested In learning Technology :)</p> </header>
+            <h2>Personal Portfolio</h2> <p>An ITU Computer Engineering Student, Too Interested In learning Technology :)</p> </header>
 
         <div class="about-section">
             <div class="about-text">
                 <h2 style="color: var(--accent-color); margin-top: 0;">Who I Am</h2> <p>I'm Ayham, a third-year Computer Engineering student at Istanbul Technical University. I work on developing algorithms, autonomous systems, and computer vision for aircraft, while actively exploring embedded systems. I've experimented and built with a wide range of programming languages, tools, and technologies to find where my strengths and interests truly lie, which has given me a broad and practical perspective for building future projects more mindfully.</p> </div>
             <div class="about-image">
-                <img src="YOUR_PROFILE_IMAGE_HERE.jpg" alt="Ayham Alhasan">
+                <img src="YOUR_PROFILE_IMAGE.jpg" alt="Ayham Alhasan">
             </div>
         </div>
 
@@ -218,8 +218,8 @@
                 Learned Skills: Python, PyMavlink, Mavlink (ardupilot), MavProxy, YOLO8, OpenCV, Documentation Reading, Shortest-Path Algorithms </div>
             <div class="project-content">
                 <p><span class="label">Description:</span> Currently working on a fixed-wing aircraft project for the TEKNOFEST competition, with planned participation in an international event in England. The project focuses on developing an autonomous airplane capable of performing maneuvers and executing a task that detects multiple targets and releasing payloads in time constraint.</p> <p><span class="label">Methodology And Role:</span> Responsible for developing automation algorithms and the communication layer using MAVLink and Pymavlink, integrating computer vision outputs into autonomous flight decision-making system. Mission Planner and ArduPilot are used based on the current situation and communication data collected via Mavlink. Also contribute to computer vision tasks when needed.</p> <p>After the plane finding the two objects, a normalized vectored line is taken between the two objects, then the plane uses Dubins Path theorem to find the shortest path to target 2 while being parallel to the normalized line to drop the objects. In addition to including real-time dropping calculations mechanisms.</p> <div class="project-images">
-                    <img src="DUBINS_PATH_IMAGE_HERE.jpg" alt="Dubins Path Diagram">
-                    <img src="TARGET_MAP_IMAGE_HERE.jpg" alt="Target Mapping Diagram">
+                    <img src="DUBINS_PATH_IMAGE.jpg" alt="Dubins Path Diagram">
+                    <img src="TARGET_MAP_IMAGE.jpg" alt="Target Mapping Diagram">
                 </div>
             </div>
         </div>
@@ -232,10 +232,12 @@
                     <li>In the first stage, all necessary components were designed from scratch, including 16/32-bit registers, instruction registers, data registers, register files, ALU, etc. ensuring each part was equipped with appropriate flags and bit widths for functionality</li> <li>In the second stage, I integrated these components into the ALU system, using a custom, simplified architecture. This integration enables the CPU to perform basic operations.</li> <li>In the third stage, I implemented the fetch-decode-execute cycle, introducing instructions to power the CPU. This process covered all essential operations, ensuring the system was capable of correctly fetching, decoding, and executing instructions as part of its core functionality. totaling 36 operations.</li> </ul>
 
                 <a href="https://github.com/itu-itis23-alhasan23/CPU-Design-In-Verilog" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
-                    <img src="CPU_ARCHITECTURE_DIAGRAM_HERE.png" alt="CPU Architecture">
-                    <img src="CPU_OPERATIONS_TABLE_HERE.png" alt="Operations Instance Table">
-                    <img src="CPU_SIMULATION_WAVEFORM_HERE.png" alt="Simulating the CPU Waveform">
-                    <img src="CPU_SCHEMATIC_HERE.png" alt="CPU Schematic Diagram">
+                    <img src="CPU_ARCHITECTURE_DIAGRAM.jpg" alt="CPU Architecture">
+                    <img src="CPU_OPERATIONS_TABLE1.jpg" alt="Operations Instance Table">
+                    <img src="CPU_OPERATIONS_TABLE2.jpg" alt="Operations Instance Table">
+                    <img src="CPU_OPERATIONS_TABLE3.jpg" alt="Operations Instance Table">
+                    <img src="CPU_SIMULATION_WAVEFORM.jpg" alt="Simulating the CPU Waveform">
+                    <img src="CPU_SCHEMATIC.jpg" alt="CPU Schematic Diagram">
                 </div>
             </div>
         </div>
@@ -245,8 +247,8 @@
                 Learned Skills: C, DataStructures & Algorithms, OOP, Interruptions handling, Serial Communication Procedures </div>
             <div class="project-content">
                 <p><span class="label">Description:</span> I built a simplified process management system in C that simulates how an operating system schedules and executes processes based on priority, arrival time, and failure conditions, handeling interrupts and executing without breaking. The system imitates real OS behavior like priority-based execution, grouped connected processes, and processing failures.</p> <p><span class="label">Methodology:</span> The system is designed using multiple data structures. Processes are grouped into process queues to represent related parent-child processes, which must execute consecutively. These queues are managed inside a double-ended queue (deque) that preserves priority, allowing high-priority processes to be executed before low-priority ones.</p> <p>Processes that arrive during execution are stored in a separate insertion queue, and are added to the system later. If a process fails -if the id of the process is a multiple of 8- then the process and its remaining related tasks are pushed into a failure stack for later inspection.</p> <p><span class="label">Program Flow:</span> Process Manager → process queues → processes if a process fails it goes to failure stack.</p> <a href="https://github.com/itu-itis23-alhasan23/Processing-Managment-System" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
-                    <img src="PMS_QUEUES_CODE_HERE.png" alt="Initial and Interruption Processes Queues">
-                    <img src="PMS_EXECUTION_EXAMPLE_HERE.png" alt="Execution Example Terminal Output">
+                    <img src="PMS_QUEUES_CODE.jpg" alt="Initial and Interruption Processes Queues">
+                    <img src="PMS_EXECUTION_EXAMPLE.jpg" alt="Execution Example Terminal Output">
                 </div>
             </div>
         </div>
@@ -256,8 +258,9 @@
                 Learned Skills: C, DataStructures & Algorithms, OOP, Decision-Making Algorithms </div>
             <div class="project-content">
                 <p><span class="label">Description:</span> Developed a fully in-terminal playable Connect Four game in C using generic trees and binary search trees. The game supports both human-versus-human and human-versus-bot modes.</p> <p><span class="label">Methodology:</span> The program is created of two parts, the game mechanism, and the bot.</p> <p>1- <strong>The game mechanism:</strong> it uses generic tree to store all possible moves according to connect-four rules, since the number of moves is not known the generic tree is used. Then the possible stored boards are used to calculate the best move by the bot.</p> <p>2- <strong>The bot:</strong> uses minmax algorithm with the help of Binary Search Trees to calculate the best possible move, by choosing the move with the least cost, meaning it is the move that yields best result. Positive values indicate advantage of yellow player, negative indicate advantage or orange player. The yellow nodes choose the biggest children value, the red chooses the maximum children</p> <a href="https://github.com/itu-itis23-alhasan23/Bot-for-connect-four-game-using-generic-trees" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
-                    <img src="CONNECT_FOUR_TREE_IMG_HERE.png" alt="Generic Tree Data Structure Code">
-                    <img src="CONNECT_FOUR_MINIMAX_IMG_HERE.png" alt="Minimax Algorithm Diagram">
+                    <img src="CONNECT_FOUR_TREE_IMG.jpg" alt="Generic Tree Data Structure Code">
+                    <img src="CONNECT_FOUR_MINIMAX_IMG.jpg" alt="Minimax Algorithm Diagram">
+                    <img src="CONNECT_CODE.jpg" alt="Minimax Algorithm Diagram">
                 </div>
             </div>
         </div>
@@ -267,9 +270,9 @@
                 Learned Skills: C, DataStructures & Algorithms, OOP, Operating Systems' Scheduling Protocols </div>
             <div class="project-content">
                 <p><span class="label">Description:</span> Implemented a simplified version of the Linux Completely Fair Scheduler (CFS) in C, giving fair CPU time allocation between processes based on their virtual runtime, processes with lower runtime are assigned higher priority. The project simulates how an operating system decides which process should run next.</p> <p><span class="label">Methodology:</span> The scheduler is built by using Min-Heap data structure, implemented from scratch. Each process is stored in the min-heap based on its virtual runtime (vruntime) meaning how much time the process takes, the process with the lowest vruntime is always selected next, similar to how CFS operates. Unlike the real Linux CFS (which uses a Red-Black Tree), this project uses a Min-Heap to simplify the implementation while keeping the same core scheduling idea.</p> <p>Process priorities are handled using "nice values", which directly affect how fast a process's vruntime grows, making the program more dynamic, presenting real scheduling systems more. As processes run, their vruntime is updated actively, and the heap is rebalanced using heap properties to maintain correct scheduling order. The scheduler supports process creation, selection, time progression (ticks), and removal.</p> <p>the (ticks) are responsible for updating vruntime for currently running function and decide if it is still worth of the priority.</p> <a href="https://github.com/itu-itis23-alhasan23/Operating-system-processing-system" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
-                    <img src="OS_HEAP_CODE_HERE.png" alt="MinHeap Struct Code">
-                    <img src="OS_SCHEDULER_CODE_HERE.png" alt="Scheduler Logic Code">
-                    <img src="OS_TICK_CODE_HERE.png" alt="Tick Function Code">
+                    <img src="OS_HEAP_CODE.jpg" alt="MinHeap Struct Code">
+                    <img src="OS_SCHEDULER_CODE.jpg" alt="Scheduler Logic Code">
+                    <img src="OS_TICK_CODE.jpg" alt="Tick Function Code">
                 </div>
             </div>
         </div>
@@ -279,8 +282,8 @@
                 Learned Skills: HTML/CSS, JavaScript, OOP, Optimization Algorithms </div>
             <div class="project-content">
                 <p><span class="label">Description:</span> Implemented numerical patterns recognition system designed to solve IQ-style pattern questions, where hidden numerical relation need to be discovered.</p> <p><span class="label">Methodology:</span> The objective is to calculate Z by finding the relation between X and Y. We store all possible operations based on the numbers' features. For instance, big numbers do not apply exponential operations, small numbers do not apply big divisions. The procedure is applied iteratively multiple times, and similar procedure is applied to Y.</p> <p>Since the possible numbers are too big, they go exponentially, spanning from 9-27 billion operations. So complex optimization algorithms were used, inspired by optimization research papers, and self-developed sections.</p> <a href="https://itu-itis23-alhasan23.github.io/Pattern-finder-to-solve-IQ-questions/" target="_blank" class="project-link">View Project Live</a> <div class="project-images">
-                    <img src="IQ_PATTERN_FLOWCHART_HERE.png" alt="Algorithm Flowchart">
-                    <img src="IQ_PATTERN_DICTIONARY_HERE.png" alt="Dictionary Storage Logic">
+                    <img src="IQ_PATTERN_FLOWCHART.jpg" alt="Algorithm Flowchart">
+                    <img src="IQ_PATTERN_DICTIONARY.jpg" alt="Dictionary Storage Logic">
                 </div>
             </div>
         </div>
@@ -290,8 +293,8 @@
                 Learned Skills: Python and Python Libraries, Real-Life N. M. Implementations </div>
             <div class="project-content">
                 <p><span class="label">Description:</span> I developed a numerical mapping and analysis project to study the pedestrian road network of the ITU Ayazağa campus, with the goal of identifying area groupings based on connectivity using spectral clustering.</p> <p><span class="label">Methodology:</span> The campus road network was modeled as a graph, where intersections are nodes and paths are edges. I implemented spectral clustering in Python by importing libraries for calculations and writing the logic code, constructing the graph Laplacian then computing its smallest eigenvectors using inverse power iteration, instead of imported solvers. These eigenvectors were then used to cluster the campus into different regions. The results were compared against a simple coordinate based k where higher k means higher accuracy.</p> <a href="https://github.com/itu-itis23-alhasan23/ITU-ayazaga-Campus-Mapping-Using-Spectral-Clustring-In-Python" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
-                    <img src="CAMPUS_MAPPING_K2_HERE.png" alt="Clustering K=2">
-                    <img src="CAMPUS_MAPPING_K5_HERE.png" alt="Clustering K=5">
+                    <img src="CAMPUS_MAPPING_K2.jpg" alt="Clustering K=2">
+                    <img src="CAMPUS_MAPPING_K5.jpg" alt="Clustering K=5">
                 </div>
             </div>
         </div>
@@ -304,8 +307,8 @@
                     <li><strong>Database Design:</strong> A normalized schema was created, then tables like manufacturers, models, and efficiency metrics were connected using foreign and primary keys.</li> <li><strong>ETL Pipeline:</strong> The raw dataset was loaded into a staging table, cleaned, then normalized to insert relationships between vehicles and their metrics.</li> <li><strong>Backend & API:</strong> A Python Flask backend was developed to handle APIs for querying and filtering, with authentication for admin access for CRUD operations.</li> <li><strong>Frontend:</strong> The frontend uses HTML, CSS, and JavaScript to display data interactively, allowing users to filter and compare vehicle efficiency metrics.</li> </ul>
 
                 <a href="#" target="_blank" class="project-link">View Project Link</a> <div class="project-images">
-                    <img src="DB_WEBSITE_UI_HERE.png" alt="Database Website UI">
-                    <img src="DB_ER_DIAGRAM_HERE.png" alt="ER Diagram">
+                    <img src="DB_WEBSITE_UI.jpg" alt="Database Website UI">
+                    <img src="DB_ER_DIAGRAM.jpg" alt="ER Diagram">
                 </div>
             </div>
         </div>
@@ -315,7 +318,7 @@
                 Learned Skills: Assembly X86, Interrupt Handling Architecture </div>
             <div class="project-content">
                 <p><span class="label">Description:</span> I developed an assembly code that emulates painting program by coloring memory addresses in memory similar to user input. User inputs are represented as hex addresses, each value having its functions (e.g., Change brush color, Move up, Move right, Move down, Move left).</p> <p><span class="label">Methodology:</span> I configured the SysTick timer to generate interrupts every 1 second, which updates the cursor position based on input. The cursor was able to move across a 32x8 pixel canvas, inputs outside this range are considered outside the program. The interrupt is assigned in R0 while transferred to R1paint in the memory. Address calculation utilizes base and offsets: Address = 0x20001000 + (y * 32) + x.</p> <a href="https://github.com/itu-itis23-alhasan23/Cursor-Based-Paint-System-benefiting-Timer-Interrupts-in-Assembly-X86" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
-                    <img src="PAINT_SYS_MEMORY_OUTPUT_HERE.png" alt="Memory Output Painting">
+                    <img src="PAINT_SYS_MEMORY_OUTPUT.jpg" alt="Memory Output Painting">
                 </div>
             </div>
         </div>
