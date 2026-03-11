@@ -227,7 +227,7 @@
             <div class="about-text">
                 <h2 style="color: var(--accent-color); margin-top: 0;">Who I Am</h2> <p>I'm Ayham, a third-year Computer Engineering student at Istanbul Technical University. I work on developing algorithms, autonomous systems, and computer vision for aircraft, while actively exploring embedded systems. I've experimented and built with a wide range of programming languages, tools, and technologies to find where my strengths and interests truly lie, which has given me a broad and practical perspective for building future projects more mindfully.</p> </div>
             <div class="about-image">
-                <img src="personal-image.png" alt="Ayham Alhasan">
+                <img src="personal-image.jpg" alt="Ayham Alhasan">
             </div>
         </div>
 
@@ -244,10 +244,10 @@
             <div class="project-content">
                 <p><span class="label">Description:</span> Currently working on a fixed-wing aircraft project for the TEKNOFEST competition, with planned participation in an international event in England. The project focuses on developing an autonomous airplane capable of performing maneuvers and executing a task that detects multiple targets and releasing payloads in time constraint.</p> <p><span class="label">Methodology And Role:</span> Responsible for developing automation algorithms and the communication layer using MAVLink and Pymavlink, integrating computer vision outputs into autonomous flight decision-making system. Mission Planner and ArduPilot are used based on the current situation and communication data collected via Mavlink. Also contribute to computer vision tasks when needed.</p> <p>After the plane finding the two objects, a normalized vectored line is taken between the two objects, then the plane uses Dubins Path theorem to find the shortest path to target 2 while being parallel to the normalized line to drop the objects. In addition to including real-time dropping calculations mechanisms.</p> <div class="project-images">
                     <figure>
-                        <img src="DUBINS_PATH_IMAGE.png" alt="Dubins Path Diagram">
+                        <img src="DUBINS_PATH_IMAGE.jpg" alt="Dubins Path Diagram">
                     </figure>
                     <figure>
-                        <img src="TARGET_MAP_IMAGE.png" alt="Target Mapping Diagram">
+                        <img src="TARGET_MAP_IMAGE.jpg" alt="Target Mapping Diagram">
                     </figure>
                 </div>
             </div>
@@ -262,27 +262,27 @@
 
                 <a href="https://github.com/itu-itis23-alhasan23/CPU-Design-In-Verilog" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
                     <figure>
-                        <img src="CPU_ARCHITECTURE_DIAGRAM.png" alt="CPU Architecture">
+                        <img src="CPU_ARCHITECTURE_DIAGRAM.jpg" alt="CPU Architecture">
                         <figcaption>CPU Architecture</figcaption>
                     </figure>
                     <figure>
-                        <img src="CPU_OPERATIONS_TABLE1.png" alt="Operations Table">
+                        <img src="CPU_OPERATIONS_TABLE1.jpg" alt="Operations Table">
                         <figcaption>Operations Instance</figcaption>
                     </figure>
                     <figure>
-                        <img src="CPU_OPERATIONS_TABLE2.png" alt="Operations Table">
+                        <img src="CPU_OPERATIONS_TABLE2.jpg" alt="Operations Table">
                         <figcaption>Execution Instance</figcaption>
                     </figure>
                     <figure>
-                        <img src="CPU_OPERATIONS_TABLE3.png" alt="Operations Table">
+                        <img src="CPU_OPERATIONS_TABLE3.jpg" alt="Operations Table">
                         <figcaption>Execution Instance</figcaption>
                     </figure>
                     <figure>
-                        <img src="CPU_SIMULATION_WAVEFORM.png" alt="Simulating the CPU Waveform">
+                        <img src="CPU_SIMULATION_WAVEFORM.jpg" alt="Simulating the CPU Waveform">
                         <figcaption>Simulating the CPU</figcaption>
                     </figure>
                     <figure>
-                        <img src="CPU_SCHEMATIC.png" alt="CPU Schematic Diagram">
+                        <img src="CPU_SCHEMATIC.jpg" alt="CPU Schematic Diagram">
                         <figcaption>CPU Schematic</figcaption>
                     </figure>
                 </div>
@@ -312,13 +312,13 @@
             <div class="project-content">
                 <p><span class="label">Description:</span> Developed a fully in-terminal playable Connect Four game in C using generic trees and binary search trees. The game supports both human-versus-human and human-versus-bot modes.</p> <p><span class="label">Methodology:</span> The program is created of two parts, the game mechanism, and the bot.</p> <p>1- <strong>The game mechanism:</strong> it uses generic tree to store all possible moves according to connect-four rules, since the number of moves is not known the generic tree is used. Then the possible stored boards are used to calculate the best move by the bot.</p> <p>2- <strong>The bot:</strong> uses minmax algorithm with the help of Binary Search Trees to calculate the best possible move, by choosing the move with the least cost, meaning it is the move that yields best result. Positive values indicate advantage of yellow player, negative indicate advantage or orange player. The yellow nodes choose the biggest children value, the red chooses the maximum children</p> <a href="https://github.com/itu-itis23-alhasan23/Bot-for-connect-four-game-using-generic-trees" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
                     <figure>
-                        <img src="CONNECT_FOUR_TREE_IMG.png" alt="Generic Tree Data Structure Code">
+                        <img src="CONNECT_FOUR_TREE_IMG.jpg" alt="Generic Tree Data Structure Code">
                     </figure>
                     <figure>
-                        <img src="CONNECT_CODE.png" alt="Code Snippet">
+                        <img src="CONNECT_CODE.jpg" alt="Code Snippet">
                     </figure>
                     <figure>
-                        <img src="CONNECT_FOUR_MINIMAX_IMG.png" alt="Minimax Algorithm Diagram">
+                        <img src="CONNECT_FOUR_MINIMAX_IMG.jpg" alt="Minimax Algorithm Diagram">
                         <figcaption>The Algorithm For calculating possible moves to store as values in the binary search tree</figcaption>
                     </figure>
                 </div>
@@ -331,13 +331,13 @@
             <div class="project-content">
                 <p><span class="label">Description:</span> Implemented a simplified version of the Linux Completely Fair Scheduler (CFS) in C, giving fair CPU time allocation between processes based on their virtual runtime, processes with lower runtime are assigned higher priority. The project simulates how an operating system decides which process should run next.</p> <p><span class="label">Methodology:</span> The scheduler is built by using Min-Heap data structure, implemented from scratch. Each process is stored in the min-heap based on its virtual runtime (vruntime) meaning how much time the process takes, the process with the lowest vruntime is always selected next, similar to how CFS operates. Unlike the real Linux CFS (which uses a Red-Black Tree), this project uses a Min-Heap to simplify the implementation while keeping the same core scheduling idea.</p> <p>Process priorities are handled using "nice values", which directly affect how fast a process's vruntime grows, making the program more dynamic, presenting real scheduling systems more. As processes run, their vruntime is updated actively, and the heap is rebalanced using heap properties to maintain correct scheduling order. The scheduler supports process creation, selection, time progression (ticks), and removal.</p> <p>the (ticks) are responsible for updating vruntime for currently running function and decide if it is still worth of the priority.</p> <a href="https://github.com/itu-itis23-alhasan23/Operating-system-processing-system" target="_blank" class="project-link">View on GitHub</a> <div class="project-images">
                     <figure>
-                        <img src="OS_HEAP_CODE.png" alt="MinHeap Struct Code">
+                        <img src="OS_HEAP_CODE.jpg" alt="MinHeap Struct Code">
                     </figure>
                     <figure>
-                        <img src="OS_SCHEDULER_CODE.png" alt="Scheduler Logic Code">
+                        <img src="OS_SCHEDULER_CODE.jpg" alt="Scheduler Logic Code">
                     </figure>
                     <figure>
-                        <img src="OS_TICK_CODE.png" alt="Tick Function Code">
+                        <img src="OS_TICK_CODE.jpg" alt="Tick Function Code">
                     </figure>
                 </div>
             </div>
@@ -394,15 +394,15 @@
 
                 <a href="#" target="_blank" class="project-link">View Project Link</a> <div class="project-images">
                     <figure>
-                        <img src="website1.png" alt="Database Website UI - Stats">
+                        <img src="website1.jpg" alt="Database Website UI - Stats">
                         <figcaption>How a model changes over the years</figcaption>
                     </figure>
                     <figure>
-                        <img src="website2.png" alt="Database Website UI - Manage Data">
+                        <img src="website2.jpg" alt="Database Website UI - Manage Data">
                         <figcaption>Manage Data</figcaption>
                     </figure>
                     <figure>
-                        <img src="website3.png" alt="Database Website UI - CRUD">
+                        <img src="website3.jpg" alt="Database Website UI - CRUD">
                         <figcaption>Create, Read, Update, Delete</figcaption>
                     </figure>
                     <figure>
@@ -431,7 +431,7 @@
                         <figcaption>Example Output</figcaption>
                     </figure>
                     <figure>
-                        <img src="drawed.png" alt="ITUCS written in colored memory addresses">
+                        <img src="drawed.jpg" alt="ITUCS written in colored memory addresses">
                     </figure>
                 </div>
             </div>
